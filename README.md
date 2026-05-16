@@ -2,6 +2,13 @@
 
 NetCell is designed for scenarios where you need more structure than a JSON file but less overhead than a full SQL server. By storing data in **columns** rather than rows, it excels at analytical queries and high compression ratios.
 
+### Documentation
+
+* **[Quickstart Guide](https://www.google.com/search?q=./docs/quickstart.md)**: Get up and running in under 60 seconds.
+* **[API Reference](https://www.google.com/search?q=./docs/api.md)**: Detailed documentation of classes, methods, and functions.
+* **[Architecture](https://www.google.com/search?q=./docs/architecture.md)**: Understanding the `.ncell` file format and columnar engine.
+
+---
 ### Key Features
 
 * **Columnar Storage:** Efficient memory usage and faster queries on specific fields.
@@ -10,10 +17,39 @@ NetCell is designed for scenarios where you need more structure than a JSON file
 * **SQL Bridge:** Query your local NetCell files using standard SQLite syntax.
 * **Zstandard Compression:** High-ratio compression for disk-space efficiency.
 * **Excel Integration:** Direct conversion from `.xlsx` to `.ncell`.
+To update your documentation with instructions for using the `setup.bat` file to install NetCell globally along with its dependencies, you can use the following section. This emphasizes the convenience of the "one-click" setup you've created.
 
-### Installation
+---
 
-Choose the command for your operating system to download the core script:
+###  Easy Installation (Windows)
+
+If you have downloaded the **`setup.bat`** file, follow these steps to install NetCell and all its features  globally on your system:
+
+1. **Run as Administrator**: Right-click `setup.bat` and select **"Run as Administrator"**. This ensures the script has permission to move NetCell into your Python library folder.
+
+2. **Automatic Setup**: The script will automatically:
+* Locate your Python `site-packages` directory.
+* Download the latest `netcell.py` directly into your global library.
+* Install `zstandard` for high-ratio data compression.
+* Install `openpyxl` to enable `.xlsx` to `.ncell` conversion.
+
+####  Verification
+
+Once the setup is complete, you can verify the installation from any directory by running:
+
+```python
+import netcell
+print("NetCell version:", netcell.NCELL_VERSION)
+
+```
+
+This works everywhere on your PC because the setup script places NetCell in your global environment.
+
+---
+
+### Manual Installation
+
+If you prefer to handle the installation manually or are on a non-Windows system, use the commands below:
 
 **Windows (cmd):**
 
