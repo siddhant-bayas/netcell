@@ -20,8 +20,7 @@ echo [1/3] Target: %SITE_PACKAGES%
 
 :: 3. Download netcell.py directly to Site-Packages
 echo [2/3] Downloading NetCell to Python library...
-certutil -urlcache -split -f "https://raw.githubusercontent.com/siddhant-bayas/netcell/refs/heads/main/netcell.py" "%SITE_PACKAGES%\netcell.py"
-
+python -c "import urllib.request; urllib.request.urlretrieve('https://raw.githubusercontent.com/siddhant-bayas/netcell/refs/heads/main/netcell.py', 'netcell.py')"
 if %ERRORLEVEL% NEQ 0 (
     echo [ERROR] Failed to download. Try running this script as Administrator.
     pause
