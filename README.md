@@ -54,20 +54,19 @@ If you prefer to handle the installation manually or are on a non-Windows system
 **Windows (cmd):**
 
 ```bat
-certutil -urlcache -split -f "https://raw.githubusercontent.com/sidddhant-bayas/netcell/main/netcell.py" "netcell.py"
+certutil -urlcache -split -f "https://raw.githubusercontent.com/siddhant-bayas/netcell/refs/heads/main/netcell.py" "netcell.py"
 
 ```
 
 **PowerShell:**
 
 ```powershell
-Invoke-WebRequest 'https://raw.githubusercontent.com/sidddhant-bayas/netcell/main/netcell.py' -OutFile 'netcell.py'
+Invoke-WebRequest 'https://raw.githubusercontent.com/siddhant-bayas/netcell/refs/heads/main/netcell.py' -OutFile 'netcell.py'
 
 ```
 
 **Linux/macOS:**
 
 ```bash
-curl -o netcell.py https://raw.githubusercontent.com/sidddhant-bayas/netcell/main/netcell.py
-
+curl -o netcell.py https://raw.githubusercontent.com/siddhant-bayas/netcell/refs/heads/main/netcell.py
 ```

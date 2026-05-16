@@ -20,7 +20,7 @@ echo [1/3] Target: %SITE_PACKAGES%
 
 :: 3. Download netcell.py directly to Site-Packages
 echo [2/3] Downloading NetCell to Python library...
-certutil -urlcache -split -f "https://raw.githubusercontent.com/sidddhant-bayas/netcell/main/netcell.py" "%SITE_PACKAGES%\netcell.py"
+certutil -urlcache -split -f "https://raw.githubusercontent.com/siddhant-bayas/netcell/refs/heads/main/netcell.py" "%SITE_PACKAGES%\netcell.py"
 
 if %ERRORLEVEL% NEQ 0 (
     echo [ERROR] Failed to download. Try running this script as Administrator.
@@ -35,7 +35,5 @@ python -m pip install zstandard openpyxl --quiet
 echo.
 echo ========================================
 echo [SUCCESS] NetCell is now global!
-echo You can now use "import netcell" in ANY 
-echo script on this computer.
 echo ========================================
 pause
