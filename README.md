@@ -4,9 +4,9 @@ NetCell is designed for scenarios where you need more structure than a JSON file
 
 ### Documentation
 
-* **[Quickstart Guide](https://www.google.com/search?q=./docs/quickstart.md)**: Get up and running in under 60 seconds.
-* **[API Reference](https://www.google.com/search?q=./docs/api.md)**: Detailed documentation of classes, methods, and functions.
-* **[Architecture](https://www.google.com/search?q=./docs/architecture.md)**: Understanding the `.ncell` file format and columnar engine.
+* **[Quickstart Guide](./docs/quickstart.md)**: Get up and running in under 60 seconds.
+* **[API Reference](./docs/api.md)**: Detailed documentation of classes, methods, and functions.
+* **[Architecture](/docs/architecture.md)**: Understanding the `.ncell` file format and columnar engine.
 
 ---
 ### Key Features
